@@ -16,20 +16,51 @@
     font-family: $main-font;
     transition: all 0.2s ease-in-out;
 
+    @include media(660){
+      display: none;
+    } 
+
     &:hover{
       color: #fff;
     }
   }
   &-link:not(:last-child){
     margin-right: 20px;
-  }
+
+    @include media(900){
+      margin-right: 10px
+    }
+  } 
 
   &-buttons{
     @include flex(center, center);
     gap: 10px;
   }
-
+  
   &-btn{
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: $main-font;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background-color: #ffffff0d;
+    transition: all 0.1s ease-in-out;
+    
+    @include media(900){
+      padding: 6px 10px;
+    } 
+    @include media(768){
+      display: none;
+    }
+    
+    &:hover{
+      background-color: rgba(82, 176, 56, 0.3);
+    }
+  }
+
+  &-btn-menu{
+    display: none;
     color: #fff;
     font-weight: 500;
     font-size: 16px;
@@ -42,10 +73,21 @@
     &:hover{
       background-color: rgba(82, 176, 56, 0.3);
     }
+
+    @include media (768){
+      padding: 6px 10px;
+      display: block;
+    }
   }
 
   &-btn:first-child{
     border-radius: 8px;
     padding: 10.25px 12.681px;
+
+    @include media(900){
+      display: none;
+    }
   }
+
+
 } 

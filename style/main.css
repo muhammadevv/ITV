@@ -58,11 +58,21 @@ button {
   font-family: "SF Pro Display", "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   transition: all 0.2s ease-in-out;
 }
+@media screen and (max-width: 660px) {
+  .header-link {
+    display: none;
+  }
+}
 .header-link:hover {
   color: #fff;
 }
 .header-link:not(:last-child) {
   margin-right: 20px;
+}
+@media screen and (max-width: 900px) {
+  .header-link:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 .header-buttons {
   display: flex;
@@ -80,12 +90,47 @@ button {
   background-color: rgba(255, 255, 255, 0.0509803922);
   transition: all 0.1s ease-in-out;
 }
+@media screen and (max-width: 900px) {
+  .header-btn {
+    padding: 6px 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-btn {
+    display: none;
+  }
+}
 .header-btn:hover {
   background-color: rgba(82, 176, 56, 0.3);
+}
+.header-btn-menu {
+  display: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "SF Pro Display", "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  padding: 8px 12px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.0509803922);
+  transition: all 0.1s ease-in-out;
+}
+.header-btn-menu:hover {
+  background-color: rgba(82, 176, 56, 0.3);
+}
+@media screen and (max-width: 768px) {
+  .header-btn-menu {
+    padding: 6px 10px;
+    display: block;
+  }
 }
 .header-btn:first-child {
   border-radius: 8px;
   padding: 10.25px 12.681px;
+}
+@media screen and (max-width: 900px) {
+  .header-btn:first-child {
+    display: none;
+  }
 }
 
 .banner {
@@ -95,7 +140,7 @@ button {
   z-index: 1;
 }
 
-.css-1m6712y {
+.swiper {
   position: absolute;
   top: 0;
   left: 0;
@@ -185,7 +230,7 @@ button {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.css-1zuxot {
+.banner-content__reting {
   display: flex;
   flex-direction: row;
   margin-bottom: 20px;
@@ -195,15 +240,15 @@ button {
 
 .css-u6zfat {
   display: flex;
-  gap: 10px;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
-.css-gojse6 {
+.banner-content__img {
   width: 280px;
 }
-.css-gojse6 img {
+.banner-content__img img {
   width: 100%;
   height: 100%;
 }
@@ -217,13 +262,13 @@ button {
 
 .banner-content__btn-one {
   width: 200px;
-  font-weight: 600;
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 18px;
   font-family: "SF Pro Display", "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   border-radius: 10px;
   color: #FFFFFF;
   background-color: #52B038;
-  padding: 13px 12px;
+  padding: 13.25px 12px;
   transition: all 0.2s ease-in-out;
 }
 .banner-content__btn-one:hover {
@@ -235,13 +280,24 @@ button {
   font-weight: 500;
   font-size: 16px;
   font-family: "SF Pro Display", "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  padding: 8px 12px;
+  padding: 10px 12px;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.0509803922);
   transition: all 0.2s ease-in-out;
 }
 .banner-content__btn-two:hover {
   background-color: rgba(82, 176, 56, 0.3);
+}
+
+.pagination {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+}
+.pagination span {
+  width: 14px;
+  height: 14px;
+  background-color: #52B038;
 }
 
 .tv {

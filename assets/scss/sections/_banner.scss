@@ -1,76 +1,3 @@
-// .banner{
-//   width: 100%;
-//   height: 100%;
-//   position: relative;
-//   top: 0;
-//   left: 0;
-//   display: flex;
-//   align-items: center;
-
-//   &-title{
-//     margin-top: 180px;
-
-//     &__img{
-//       width: 290px;
-//       height: 120px;
-
-//       img{
-//         width: 100%;
-//         height: 100%;
-//       }
-//     }
-
-//     &__subtitle{
-//       color: #fff;
-//       font-size: 18px;
-//       font-family: $main-font;
-//       margin-top: 40px;
-//     }
-
-//     &__btn{
-//       margin-top: 20px;
-//       color: #fff;
-//       width: 200px;
-//       height: 50px;
-//       font-size: 18px;
-//       font-weight: 600;
-//       font-family: $main-font;
-//       border-radius: 10px;
-//       background-color: #52b038;
-//       transition: all 0.2s ease-in-out;
-
-//       &:hover{
-//         background-color: #52b03877;
-//       }
-//     }
-//   }
-
-
-
-//   &-bg{
-//     width: 100%;
-//     height: 100%;
-//     background: linear-gradient(90deg, #171818 0%, rgba(23, 24, 24, 0.2) 43.32%, rgba(23, 24, 24, 0) 56.33%),linear-gradient(180deg, rgba(23, 24, 24, 0.3) 0%, rgba(23, 24, 24, 0) 100%),linear-gradient(360deg, #171818 0%, rgba(23, 24, 24, 0) 100%);
-//     position: absolute;
-//     display: flex;
-//     align-items: center;
-//     padding-left: 10.3%;
-//     padding-bottom: 5%;
-//   }
-
-
-//   &-img{
-//     width: 100%;
-//     height: 100%;
-
-//     img{
-//       width: 100%;
-//       height: 100%;
-
-//     }
-//   }
-// }
-
 .banner {
   width: 100%;
   height: 620px;
@@ -78,7 +5,7 @@
   z-index: 1;
 }
 
-.css-1m6712y {
+.swiper{
   position: absolute;
   top: 0;
   left: 0;
@@ -151,8 +78,6 @@
   z-index: 2;
 }
 
-.banner-content-row {}
-
 .banner-content__title {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
@@ -174,7 +99,7 @@
 
 }
 
-.css-1zuxot {
+.banner-content__reting {
   display: flex;
   flex-direction: row;
   margin-bottom: 20px;
@@ -184,15 +109,12 @@
 
 .css-u6zfat {
   display: flex;
-  gap: 10px;
-  -webkit-box-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
   align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
-
-.css-gojse6 {
+.banner-content__img {
   width: 280px;
 
   img {
@@ -210,13 +132,13 @@
 }
 .banner-content__btn-one {
   width: 200px;
-  font-weight: 600;
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 18px;
   font-family: $main-font;
   border-radius: 10px;
   color: #FFFFFF;
   background-color: #52B038;
-  padding: 13px 12px;
+  padding: 13.25px 12px;
   transition: all 0.2s ease-in-out;
 
   &:hover{
@@ -229,7 +151,7 @@
     font-weight: 500;
     font-size: 16px;
     font-family: $main-font;
-    padding: 8px 12px;
+    padding: 10px 12px;
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.0509803922);
     transition: all 0.2s ease-in-out;
@@ -237,4 +159,16 @@
     &:hover{
       background-color: rgba(82, 176, 56, 0.3);
     }
+}
+
+.pagination {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+
+  span{
+    width: 14px;
+    height: 14px;
+    background-color: #52B038;
+  }
 }
