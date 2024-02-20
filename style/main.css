@@ -1,0 +1,330 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #171818;
+}
+
+a {
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  max-width: 1150px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header {
+  width: 100%;
+  padding: 10px 0;
+  background-color: transparent;
+  position: fixed;
+  z-index: 10;
+}
+.header-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-link {
+  color: rgba(255, 255, 255, 0.5019607843);
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "SF Pro Display", "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  transition: all 0.2s ease-in-out;
+}
+.header-link:hover {
+  color: #fff;
+}
+.header-link:not(:last-child) {
+  margin-right: 20px;
+}
+.header-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.header-btn {
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "SF Pro Display", "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  padding: 8px 12px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.0509803922);
+  transition: all 0.1s ease-in-out;
+}
+.header-btn:hover {
+  background-color: rgba(82, 176, 56, 0.3);
+}
+.header-btn:first-child {
+  border-radius: 8px;
+  padding: 10.25px 12.681px;
+}
+
+.banner {
+  width: 100%;
+  height: 620px;
+  position: relative;
+  z-index: 1;
+}
+
+.css-1m6712y {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-pointer-events {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  touch-action: pan-y;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.banner-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #171818 0%, rgba(23, 24, 24, 0.2) 43.32%, rgba(23, 24, 24, 0) 56.33%), linear-gradient(180deg, rgba(23, 24, 24, 0.3) 0%, rgba(23, 24, 24, 0) 100%), linear-gradient(360deg, #171818 0%, rgba(23, 24, 24, 0) 100%);
+  z-index: 2;
+}
+
+.banner-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.banner-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.banner-content {
+  position: absolute;
+  width: 100%;
+  top: 200px;
+  left: 0;
+  z-index: 2;
+}
+
+.banner-content__title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.css-u6zfat .value {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #fff;
+  font-family: "SF Pro Display", "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.css-1zuxot {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  gap: 12px;
+}
+
+.css-u6zfat {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.css-gojse6 {
+  width: 280px;
+}
+.css-gojse6 img {
+  width: 100%;
+  height: 100%;
+}
+
+.banner-content__buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.banner-content__btn-one {
+  width: 200px;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "SF Pro Display", "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  border-radius: 10px;
+  color: #FFFFFF;
+  background-color: #52B038;
+  padding: 13px 12px;
+  transition: all 0.2s ease-in-out;
+}
+.banner-content__btn-one:hover {
+  background-color: rgba(82, 176, 56, 0.3);
+}
+
+.banner-content__btn-two {
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "SF Pro Display", "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  padding: 8px 12px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.0509803922);
+  transition: all 0.2s ease-in-out;
+}
+.banner-content__btn-two:hover {
+  background-color: rgba(82, 176, 56, 0.3);
+}
+
+.tv {
+  margin-top: 40px;
+  margin-bottom: 200px;
+  overflow: hidden;
+  flex: 1 1 auto;
+}
+.tv-title {
+  display: flex;
+}
+.tv-title__link {
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  gap: 2px;
+}
+.tv-title__link::after {
+  display: flex;
+  content: " ";
+  width: 25px;
+  height: 28px;
+  margin-top: 12px;
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.00024 18L15.0002 12L9.00024 6' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+.tv-title__link__text {
+  color: #fff;
+  font-size: 32px;
+  font-family: "SF Pro Display", "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.tv-content {
+  margin-top: 30px;
+  display: flex;
+  gap: 12px;
+}
+.tv-content__box {
+  width: 214px;
+  height: 327px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.tv-content__box__bottom {
+  gap: 12px;
+}
+.tv-content__box__btn {
+  margin-left: 4px;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+}
+.tv-content__box__btn:hover {
+  transform: scale(1.04);
+}
+.tv-content__box__btn:hover .tv-content__box__btn__play {
+  opacity: 1;
+  visibility: visible;
+}
+.tv-content__box__btn__play {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+}
+.tv-content__box__btn img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  border-radius: 12px;
+}/*# sourceMappingURL=main.css.map */

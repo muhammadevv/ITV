@@ -1,0 +1,51 @@
+.header{
+  width: 100%;
+  padding: 10px 0;
+  background-color: transparent;
+  position: fixed;
+  z-index: 10;
+
+  &-row{  position: relative;
+    @include flex(center, space-between);
+  }
+
+  &-link{
+    color: #ffffff80;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: $main-font;
+    transition: all 0.2s ease-in-out;
+
+    &:hover{
+      color: #fff;
+    }
+  }
+  &-link:not(:last-child){
+    margin-right: 20px;
+  }
+
+  &-buttons{
+    @include flex(center, center);
+    gap: 10px;
+  }
+
+  &-btn{
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: $main-font;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background-color: #ffffff0d;
+    transition: all 0.1s ease-in-out;
+
+    &:hover{
+      background-color: rgba(82, 176, 56, 0.3);
+    }
+  }
+
+  &-btn:first-child{
+    border-radius: 8px;
+    padding: 10.25px 12.681px;
+  }
+} 
