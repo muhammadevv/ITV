@@ -149,19 +149,34 @@ button {
     height: 620px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .banner {
     height: 480px;
   }
 }
+@media screen and (max-width: 660px) {
+  .banner {
+    height: 460px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .banner {
+    height: 440px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .banner {
+    height: 380px;
+  }
+}
 @media screen and (max-width: 440px) {
   .banner {
-    height: 360px;
+    height: 300px;
   }
 }
 @media screen and (max-width: 375px) {
   .banner {
-    height: 280px;
+    height: 240px;
   }
 }
 
@@ -254,25 +269,43 @@ button {
 }
 @media screen and (max-width: 768px) {
   .banner-content {
-    top: 240px;
+    top: 180px;
     left: 80px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .banner-content {
+    top: 160px;
+    left: 20px;
   }
 }
 @media screen and (max-width: 600px) {
   .banner-content {
-    top: 180px;
-    left: 40px;
+    top: 160px;
+    left: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .banner-content {
+    top: 120px;
+    left: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .banner-content {
+    top: 100px;
+    left: 20px;
   }
 }
 @media screen and (max-width: 440px) {
   .banner-content {
-    top: 140px;
-    left: 40px;
+    top: 100px;
+    left: 20px;
   }
 }
 @media screen and (max-width: 375px) {
   .banner-content {
-    top: 120px;
+    top: 80px;
     left: 20px;
   }
 }
@@ -299,9 +332,11 @@ button {
   }
 }
 
-.banner-content__reting__svg svg {
-  width: 16px;
-  height: 16px;
+@media screen and (max-width: 375px) {
+  .banner-content__reting__svg svg {
+    width: 16px;
+    height: 16px;
+  }
 }
 
 .banner-content__reting__text {
@@ -333,7 +368,7 @@ button {
   margin-top: 40px;
   gap: 12px;
 }
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 550px) {
   .banner-content__reting {
     margin-top: 20px;
     margin-bottom: 10px;
@@ -366,6 +401,18 @@ button {
 @media screen and (max-width: 768px) {
   .banner-content__img {
     width: 220px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .banner-content__img {
+    width: 200px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .banner-content__img {
+    width: 180px;
     height: 100px;
   }
 }
@@ -483,12 +530,14 @@ button {
 @media screen and (max-width: 375px) {
   .banner-content__btn-two {
     border-radius: 4px;
-    padding: 2 px 4px;
+    padding: 2px 4px;
   }
 }
-.banner-content__btn-two svg {
-  width: 16px;
-  height: 16px;
+@media screen and (max-width: 375px) {
+  .banner-content__btn-two svg {
+    width: 16px;
+    height: 16px;
+  }
 }
 .banner-content__btn-two:hover {
   background-color: rgba(82, 176, 56, 0.3);
