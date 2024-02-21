@@ -24,10 +24,10 @@
     height: 380px;
   }
   @include media (440) {
-    height: 300px;
+    height: 280px;
   }
   @include media (375) {
-    height: 240px;
+    height: 220px;
   }
 }
 
@@ -170,7 +170,7 @@
   svg{
 
 
-    @include media(375){
+    @include media(440){
       width: 16px;
       height: 16px;
     }

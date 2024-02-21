@@ -171,12 +171,12 @@ button {
 }
 @media screen and (max-width: 440px) {
   .banner {
-    height: 300px;
+    height: 280px;
   }
 }
 @media screen and (max-width: 375px) {
   .banner {
-    height: 240px;
+    height: 220px;
   }
 }
 
@@ -332,7 +332,7 @@ button {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 440px) {
   .banner-content__reting__svg svg {
     width: 16px;
     height: 16px;
