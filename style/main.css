@@ -535,13 +535,13 @@ button {
 @media screen and (max-width: 375px) {
   .banner-content__btn-two {
     border-radius: 4px;
-    padding: 2px 4px;
+    padding: 1px 6px;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 440px) {
   .banner-content__btn-two svg {
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 15px;
   }
 }
 .banner-content__btn-two:hover {

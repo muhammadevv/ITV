@@ -343,14 +343,14 @@
   }
   @include media (375) {
     border-radius: 4px;
-    padding: 2px 4px;
+    padding: 1px 6px;
   }
 
   svg{
 
-    @include media (375){
-      width: 16px;
-      height: 16px; 
+    @include media (440){
+      width: 14px;
+      height: 15px; 
     }
 
   }
