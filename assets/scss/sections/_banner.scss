@@ -3,9 +3,27 @@
   height: 620px;
   position: relative;
   z-index: 1;
+
+  @include media (2560) {
+    height: 900px;
+  }
+
+  @include media (1440) {
+    height: 620px;
+  }
+
+  @include media (600) {
+    height: 480px;
+  }
+  @include media (440) {
+    height: 360px;
+  }
+  @include media (375) {
+    height: 280px;
+  }
 }
 
-.swiper{
+.swiper {
   position: absolute;
   top: 0;
   left: 0;
@@ -26,7 +44,7 @@
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  // overflow: hidden;
+  overflow: hidden;
   list-style: none;
   padding: 0;
   z-index: 1;
@@ -51,7 +69,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 101%;
   background: linear-gradient(90deg, #171818 0%, rgba(23, 24, 24, 0.2) 43.32%, rgba(23, 24, 24, 0) 56.33%), linear-gradient(180deg, rgba(23, 24, 24, 0.3) 0%, rgba(23, 24, 24, 0) 100%), linear-gradient(360deg, #171818 0%, rgba(23, 24, 24, 0) 100%);
   z-index: 2;
 }
@@ -76,6 +94,36 @@
   top: 200px;
   left: 0;
   z-index: 2;
+
+  @include media (2560) {
+    top: 400px;
+  }
+
+  @include media (1440) {
+    top: 240px;
+  }
+
+  @include media (1024) {
+    top: 200px;
+    left: 80px;
+  }
+  @include media (768) {
+    top: 240px;
+    left: 80px;
+  }
+
+  @include media (600) {
+    top: 180px;
+    left: 40px;
+  }
+  @include media (440) {
+    top: 140px;
+    left: 40px;
+  }
+  @include media (375) {
+    top: 120px;
+    left: 20px;
+  }
 }
 
 .banner-content__title {
@@ -83,9 +131,27 @@
   font-size: 18px;
   color: #fff;
   font-weight: 400;
+
+  @include media(600){
+    font-size: 16px;
+  }
+  @include media(440){
+    font-size: 12px;
+  }
+  @include media(375){
+    font-size: 10px;
+  }
 }
 
-.css-u6zfat .value {
+.banner-content__reting__svg{
+
+  svg{
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.banner-content__reting__text{
   font-size: 20px;
   font-weight: 600;
   line-height: 24px;
@@ -96,6 +162,12 @@
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
 
+  @include media(600){
+    font-size: 18px;
+  }
+  @include media(440){
+    font-size: 12px;
+  }
 
 }
 
@@ -105,9 +177,18 @@
   margin-bottom: 20px;
   margin-top: 40px;
   gap: 12px;
+
+  @include media (440) {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  @include media (375) {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
 }
 
-.css-u6zfat {
+.banner-content__reting__icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,6 +197,24 @@
 
 .banner-content__img {
   width: 280px;
+  height: 140px;
+
+  @include media (1024) {
+    width: 260px;
+    height: 120px;
+  }
+  @include media (768) {
+    width: 220px;
+    height: 100px;
+  }
+  @include media (440) {
+    width: 160px;
+    height: 60px;
+  }
+  @include media (375) {
+    width: 120px;
+    height: 50px;
+  }
 
   img {
     width: 100%;
@@ -124,12 +223,20 @@
 }
 
 
-.banner-content__buttons{
+.banner-content__buttons {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-top: 20px;
+
+  @include media(440){
+    margin-top: 10px;
+  }
+  @include media(375){
+    margin-top: 6px;
+  }
 }
+
 .banner-content__btn-one {
   width: 200px;
   font-weight: 700;
@@ -141,24 +248,75 @@
   padding: 13.25px 12px;
   transition: all 0.2s ease-in-out;
 
-  &:hover{
+  @include media (768) {
+    width: 180px;
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 11.25px 10;
+  }
+
+  @include media (600) {
+    width: 160px;
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 9.25px 8px;
+  }
+
+  @include media (440) {
+    width: 120px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 6px;
+    padding: 7.25px 6px;
+  }
+  @include media (375) {
+    width: 80px;
+    font-size: 10px;
+    font-weight: 400;
+    border-radius: 6px;
+    padding: 5.25px 4px;
+  }
+
+  &:hover {
     background-color: rgba(82, 176, 56, 0.3);
   }
 }
 
-.banner-content__btn-two{
-    color: #fff;
-    font-weight: 500;
-    font-size: 16px;
-    font-family: $main-font;
-    padding: 10px 12px;
-    border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.0509803922);
-    transition: all 0.2s ease-in-out;
+.banner-content__btn-two {
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: $main-font;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.0509803922);
+  transition: all 0.2s ease-in-out;
 
-    &:hover{
-      background-color: rgba(82, 176, 56, 0.3);
-    }
+  @include media (768) {
+    border-radius: 6px;
+    padding: 8px 10px;
+  }
+  @include media (600) {
+    border-radius: 6px;
+    padding: 6px 8px;
+  }
+  @include media (440) {
+    border-radius: 6px;
+    padding: 4px 6px;
+  }
+  @include media (375) {
+    border-radius: 4px;
+    padding: 2  px 4px;
+  }
+
+  svg{
+    width: 16px;
+    height: 16px;
+  }
+
+  &:hover {
+    background-color: rgba(82, 176, 56, 0.3);
+  }
 }
 
 .pagination {
@@ -166,9 +324,14 @@
   z-index: 2;
   right: 0;
 
-  span{
+  span {
     width: 14px;
     height: 14px;
     background-color: #52B038;
+
+    @include media (440) {
+      width: 10px;
+      height: 10px;
+    }
   }
 }
