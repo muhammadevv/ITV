@@ -26,6 +26,9 @@
   @include media (440) {
     height: 280px;
   }
+  @include media (400) {
+    height: 240px;
+  }
   @include media (375) {
     height: 220px;
   }
@@ -128,16 +131,16 @@
     top: 160px;
     left: 20px;
   }
-  @include media (600) {
+  @include media (550) {
     top: 120px;
     left: 20px;
   }
-  @include media (600) {
-    top: 100px;
+  @include media (440) {
+    top: 80px;
     left: 20px;
   }
-  @include media (440) {
-    top: 100px;
+  @include media (400) {
+    top: 60px;
     left: 20px;
   }
   @include media (375) {
